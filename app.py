@@ -29,7 +29,13 @@ def summarize_text(text, max_chunk_length=512):
     # Summarize each chunk using Hugging Face API
     summaries = []
     for chunk in chunks:
-        response = query({"inputs": chunk})
+        response = query({
+            "inputs": chunk,
+            "parameters": {
+                "max_length": 60,  # Adjust to shorten the summary
+                "min_length": 20,  # Ensure summary contains enough info
+            }
+        })
         if 'error' in response:
             st.error(f"Error from Hugging Face API: {response['error']}")
             return "Error in summarization"
