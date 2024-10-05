@@ -2,7 +2,13 @@
 
 Link : [https://summarize-pdf.streamlit.app/](https://summarize-pdf.streamlit.app/) 
 
+
 ![Website](https://i.imgur.com/khqPdiM.jpeg)
+
+#### Now You can even summarize text 
+By typing or pasting the text you want to summarize in the text Input 
+
+![text](https://i.imgur.com/NnKXSFf.gif)
 
 ### Run Locally : 
 Activate Python environment :
